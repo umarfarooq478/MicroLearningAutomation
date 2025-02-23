@@ -25,28 +25,21 @@ A fully automated **micro-learning system** that sends **AI-generated daily emai
 
 ### **1️⃣ Prerequisites**  
 - A **Google account** (for Sheets & Calendar integration)  
-- A **Google Cloud Project** with Gmail API enabled  
 - A **ChatGPT/OpenAI API Key** for AI-generated lessons  
-
-### **2️⃣ Setup Google Apps Script**  
-1. Open [Google Apps Script](https://script.google.com/) and create a new project.  
-2. Copy and paste the `Code.gs` file into the script editor.  
-3. Replace **your OpenAI API Key** and **email settings** in the configuration section.  
-4. Grant necessary permissions for Gmail, Sheets, and Calendar.  
+ 
 
 ### **3️⃣ Setup Google Sheets**  
 1. Create a Google Sheet named **Micro-Learning Progress**.  
 2. Add columns: `Date | Topic | Status | Time Spent | Penalty Time | Holiday`.  
-3. Link the sheet in the script for tracking progress.  
+
+ ### **2️⃣ Setup Google Apps Script**  
+1. Click on extensions in Google Sheets
+2. Click on App Script, and then in editor, paste the code.gs file
+3. Replace the placeholders with actual data.
+
 
 ### **4️⃣ Schedule the Script**  
-1. Go to **Triggers** in Apps Script.  
-2. Schedule:  
-   - `sendDailyLearningEmail()` → **Every day at 10 AM**  
-   - `addLearningCalendarEvent()` → **Every day at 9 AM**  
-3. Done! The system will now send daily learning emails & reminders. 🎯  
-
----
+1. Run scheduleTasks function with your preferred times.
 
 ## **📜 License**  
 
